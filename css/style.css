@@ -51,8 +51,46 @@ nav {
 }
 
 #projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #45567D;
     color: white;
+}
+
+#projects h2 {
+    font-size: 2.625rem;
+    font-family: 'Raleway', sans-serif;
+    padding: 6rem 0 3rem;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+    max-width: 1480px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+}
+
+a img {
+    width: 400px;
+    height: 300px;
+}
+
+p.project-tile {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0.5rem;
+    background-color: #303841;
 }
 
 #contact {
@@ -103,6 +141,10 @@ nav {
     padding-right: .3rem;
 }
 
+.social-media a:hover {
+    margin-top: 1rem;
+}
+
 #contact a:hover {}
 
 footer {
@@ -116,4 +158,11 @@ footer {
     font-family: 'Poppins', sans-serif;
     padding: 3rem 0;
     font-size: 1.125rem;
+}
+
+@media(max-midth:640) {
+    .projects {
+        display: flex;
+        flex-direction: column;
+    }
 }
