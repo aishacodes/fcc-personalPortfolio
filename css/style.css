@@ -7,7 +7,7 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 1.38rem;
     padding: 1.25rem;
 }
@@ -16,7 +16,6 @@ nav {
     background-color: #BE3144;
     position: fixed;
     width: 100%;
-    height: 64px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -28,9 +27,93 @@ nav {
 }
 
 #welcome-section {
-    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #2F3134;
     color: white;
     min-height: 200px;
     height: 100vh;
+}
+
+#welcome-section h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3.75rem;
+}
+
+#welcome-section p {
+    font-weight: 200;
+    color: #be3144;
+    font-size: 1.875rem;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 1.5rem;
+}
+
+#projects {
+    background-color: #45567D;
+    color: white;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #303841;
+    color: white;
+    height: 80vh;
+}
+
+.contact-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-heading>h2 {
+    color: #f0f0f0;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3.75rem;
+    line-height: 5.25rem;
+}
+
+.contact-heading>p {
+    padding: .7rem 0 3.5rem 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media svg {
+    padding-right: .3rem;
+}
+
+#contact a:hover {}
+
+footer {
+    border-top: 2px solid #BE3144;
+    background-color: #303841;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
+    padding: 3rem 0;
+    font-size: 1.125rem;
 }
